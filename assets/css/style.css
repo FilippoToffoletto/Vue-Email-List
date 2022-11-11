@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(106, 198, 92);
+}
+
+ul li:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+ul li:active{
+    background-color: aqua;
+}
+ul li:focus{
+    background-color: aqua;
+}
+a{
+    color: black;
+    text-decoration: none;
+}

@@ -22,7 +22,33 @@
 </head>
 <body>
 
-    <div id="app"></div>
+    <div class="container" id="app">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center fw-bold py-3">
+                    Email List
+                </h1>
+            </div>
+
+            <div class="offset-5 align-items-center ">
+                <button type="button" 
+                class="btn btn-outline-dark"
+                @click="getApi()">GENERA LISTA</button>
+            </div>
+
+        </div>
+        <div class="row my-5">
+            <div class="col-6 m-auto text-center">
+                <ul 
+                class="list-group"
+                v-if="isLoad">
+                    <li 
+                    class="list-group-item"
+                    v-for="mail in mailList"><a href="#" class="">{{mail}}</a></li>
+                  </ul>
+            </div>
+        </div>
+    </div>
 
     
 
